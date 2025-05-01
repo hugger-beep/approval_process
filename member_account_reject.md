@@ -1,4 +1,59 @@
 
+## This diagram illustrates:
+
+### 1. Main Process Flow :
+
+a. Request validation
+
+b. Signature verification
+
+c. DynamoDB update
+
+d. SNS notification
+
+e. HTML response generation
+
+### 2. AWS Services Used :
+
+a. Secrets Manager (for signing secret)
+
+b. DynamoDB (for token storage)
+
+c. SNS (for notifications)
+
+### 3. Helper Functions :
+
+a. get_signing_secret()
+
+b. validate_request_parameters()
+
+c. verify_signature()
+
+d. update_dynamodb_status()
+
+e. send_sns_notification()
+
+f. generate_html_response()
+
+### 4. Error Handling :
+
+a. 400 Bad Request
+
+b. 401 Unauthorized
+
+c. 500 Internal Server Error
+
+### 5. Dependencies and Interactions :
+
+a. Service connections
+
+b. Function relationships
+
+c. Error paths
+
+
+
+
 ``` mermaid
 
 flowchart TD
