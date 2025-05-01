@@ -21,7 +21,7 @@ b. Lambda generates tokens and stores in DynamoDB
 
 c. Notifications sent via SNS
 
-d. Users receive approval requests
+d. Users receive approval and reject requests - token, signature, expiry time
 
 e. API Gateway handles responses
 
