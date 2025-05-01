@@ -1,3 +1,32 @@
+
+## This diagram shows:
+
+### 1. Core Components:
+
+a. KMS Keys for encryption
+b. SNS Topics for notifications
+c. Lambda function for email processing
+d. API Gateway in member account
+e. DynamoDB for token storage
+
+### 2. Flow:
+
+a. EventBridge triggers Lambda daily
+b. Lambda generates tokens and stores in DynamoDB
+c. Notifications sent via SNS
+d. Users receive approval requests
+e. API Gateway handles responses
+
+## 3. Security:
+
+a. KMS encryption for SNS and Secrets
+b. Cross-account access controls
+c. Token-based verification
+
+
+
+
+
 ``` mermaid
 
 flowchart TD
