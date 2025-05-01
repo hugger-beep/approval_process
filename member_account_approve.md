@@ -1,4 +1,81 @@
 
+## This diagram illustrates:
+
+### 1. Main Process Flow :
+
+a. Lambda handler start
+
+b. Parameter validation
+
+c. Signature verification
+
+d. DynamoDB status update
+
+e. SNS notification
+
+f. HTML response generation
+
+### 2. AWS Services Integration :
+
+a. Secrets Manager (signing secret)
+
+b. DynamoDB (token storage)
+
+c. SNS (notifications)
+
+d. CloudWatch (logging)
+
+### 3. Helper Functions :
+
+a. verify_signature()
+
+b. get_signing_secret()
+
+c. validate_request_parameters()
+
+d. update_dynamodb_status()
+
+e. send_sns_notification()
+
+f. generate_html_response()
+
+### 4. Parameter Validation :
+
+a. Token validation
+
+b. Signature verification
+
+c. Timestamp checking
+
+### 5. Response Types :
+
+a. Success HTML template
+
+b. Error HTML template
+
+### 6. Error Handling :
+
+a. 400 Bad Request
+
+b. 401 Unauthorized
+
+c. 500 Internal Server Error
+
+### Note
+
+AWS Services (Orange)
+
+Helper Functions (Light Blue)
+
+Validation Steps (Light Green)
+
+Error Handlers (Red)
+
+HTML Templates (Purple)
+
+Main Flow (Light Yellow)
+
+
 ``` mermaid
 
 flowchart TD
