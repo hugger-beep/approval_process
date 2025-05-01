@@ -51,8 +51,8 @@ graph TD
     end
 
     subgraph "API Resources"
-        ApproveRes[/approve Resource]
-        RejectRes[/reject Resource]
+        ApproveRes[approve Resource]
+        RejectRes[reject Resource]
         
         APIGW -->|Contains| ApproveRes
         APIGW -->|Contains| RejectRes
