@@ -1,3 +1,6 @@
+You can add HTTP Method (GET, POST, OPTIONS) to allow from IPSet with Rate Limit etc using AWF
+
+
 ``` mermaid
 
 graph TD
