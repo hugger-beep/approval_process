@@ -51,7 +51,15 @@ b. Function relationships
 
 c. Error paths
 
+## Note
 
+AWS Services (Orange)
+
+Helper Functions (Light Blue)
+
+Error Handlers (Red)
+
+Main Flow (Light Green)
 
 
 ``` mermaid
